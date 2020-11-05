@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --Red: hsl(0, 100%, 74%) ;
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%) ;
+    --GrayishBlue: hsl(245, 19%, 74%);
+}
+body{
+    padding: 20px;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    background-position-x: center;
+}
+.cabezera{
+    margin-top: 60px;
+}
+.title{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+.title-description{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--GrayishBlue);
+}
+.container-days{
+    margin-top: 30px;
+}
+.days{
+    background-color: var(--Blue) ;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 1px #CD6365;
+}
+.title-days{
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 10px 60px ;
+}
+.days-bold{
+    font-weight: 600;
+}
+.container-form{
+    margin-top: 10px;
+}
+.formulario{
+    background-color: white;
+    padding: 25px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 1px  #CD6365;
+    
+}
+input{
+    padding: 10px;
+    border:1px solid var(--GrayishBlue);
+    border-radius: 00.5rem;
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.form-buttom{
+    color: white;
+    background-color:var(--Green) ;
+    border: none;
+    border-radius: 00.5rem;
+    width: 100%;
+    padding: 15px;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 1px #30BA7F;
+}
+.form-buttom:hover{
+    cursor: pointer;
+}
+.description-form{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--GrayishBlue);
+}
+.form-bold{
+    font-weight: 600;
+    color: #cf6f71;
+}
+.input:focus{
+    border: 1px solid black;
+}
+
+@media screen and (min-width:1200px){
+    body{
+        background-image: url(./images/bg-intro-desktop.png);
+        width: 1050px;
+        height: 78vh;
+        margin: 5% auto;
+        padding: 0;
+        display: flex;
+        
+        align-items: center;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+    }
+    .cabezera{
+        margin: 0;
+    }
+    .container-days{
+        margin: 0;
+    }
+    .title{
+        text-align: left;
+        font-size: 45px;
+    }
+    .title-description{
+        text-align: left;
+    }
+   .formulario{
+       padding: 35px;
+   }
+   input{
+       margin-bottom: 20px;
+   }
+   .title-days{
+       padding: 16px;
+   }
+}
